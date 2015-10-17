@@ -1,0 +1,110 @@
+/* Space out content a bit */
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.border {
+    width:30px;
+    height:30px;
+    border-radius:100%;
+    border:1px solid black;
+    text-align:center;
+    line-height:30px;
+    position:relative;
+    margin:0px;
+
+
+}
+
+.border:hover {color: #ff7496;
+               border:1px solid #ff7496;
+               -webkit-animation: pulsate 1s ease-out;
+               -webkit-animation-iteration-count: infinite;
+               -webkit-transform: translateZ(10px);
+              }
+
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(1, 1); opacity: 1.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1, 1); opacity: 0.0;}
+}
+
+
+/* Vertical alignment of container */
+/* .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  /*height: 256px;*/
+  position: relative;
+  margin: 10px;
+
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+    /*height: 255px;*/
+  }
+}
+
+/*
+-webkit-box-reflect: below 0px
+    -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(white));
+*/
+
+
+#visualisationbox {
+    position: relative;
+    margin: 10px;
+
+    -webkit-box-reflect: below 3px 100px
+    -webkit-gradient( linear, left top, left bottom, from(transparent),
+
+                      to(rgba(255,255,255,0.2)) );
+}
+
+.jumbotron #visualisationbox { height: 75px;}
+
+#visualisationbox #visualisation > div {
+    /* width: 2.5%;*/
+    height: 0px;
+    background-color: #ff7496;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+}
